@@ -86,7 +86,7 @@ class TinyPicPlugin implements Plugin<Project> {
 
                     String resPath = "${project.projectDir}/src/main/res/"
                     def dir = new File("${resPath}")
-                    dir.eachDirMatch(~/drawable[a-z-]*/) { drawDir ->
+                    dir.eachDirMatch(~/${tinyinfo.path}[a-z-]*/) { drawDir ->
                         def file = new File("${drawDir}")
                         file.eachFile { filePathAndName ->
                             def fileName = filePathAndName.name
@@ -213,7 +213,7 @@ class TinyPicPlugin implements Plugin<Project> {
 class TinyInfo {
     String apiKey
     String maxNum
-
+    String path
 
     boolean skip
     boolean isShowLog
