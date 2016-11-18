@@ -6,7 +6,7 @@
 ## UpdateInfo
 ### 1.1.4
     add two new properties:
-    //if skpi the task
+    //if skip the task
     skip = true/false 
     //if print log 
     isShowLog = true/false
@@ -34,7 +34,7 @@ add below code in the inner build.gradle file(which is in the same directory of 
 
  	tinyinfo {
                 apiKey = 'your tiny API key'
-                //if skpi the task
+                //if skip the task
                 skip = true/false 
                 //if print log 
                 isShowLog = true/false
