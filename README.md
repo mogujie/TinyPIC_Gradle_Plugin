@@ -60,7 +60,7 @@ OK,have a try and have fun!!!
 TinyPIC is licensed under the MIT license
 
 
-操作步骤：
+上传到bintray操作步骤：
 1、local.properties文件里加入
 bintray.user=xxxxxxx
 bintray.apikey=xxxxxxxxxx
