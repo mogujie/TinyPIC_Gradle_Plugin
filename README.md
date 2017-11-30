@@ -58,3 +58,12 @@ OK,have a try and have fun!!!
 ## Licence
 ***
 TinyPIC is licensed under the MIT license
+
+
+操作步骤：
+1、local.properties文件里加入
+bintray.user=xxxxxxx
+bintray.apikey=xxxxxxxxxx
+2、gradlew install
+3、gradlew bintrayUpload
+

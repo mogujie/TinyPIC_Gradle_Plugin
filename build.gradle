@@ -1,28 +1,32 @@
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
+        mavenCentral()
+        google()
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+        //gradle android maven plugin
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        //gradle bintray plugin
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
         classpath "org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1"
     }
 }
 
 allprojects {
     repositories {
+        jcenter()
         mavenCentral()
+        google()
     }
 }
+
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
 apply from: 'bintray.gradle'
-
-
-
 
 dependencies {
     compile gradleApi()
