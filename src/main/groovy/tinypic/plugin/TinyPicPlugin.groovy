@@ -36,7 +36,7 @@ class TinyPicPlugin implements Plugin<Project> {
 
 
                 if (tinyinfo.skip == true) {
-                    printlog "skip tinyPicPlugin Task!!!!!!"
+                    printlog "skip tinyPicPlugin Task!!!"
 
                     return
                 }
@@ -136,6 +136,9 @@ class TinyPicPlugin implements Plugin<Project> {
 
                                         try {
                                             def beforeSize = fis.available();
+                                            if (beforeSize < tinyinfo.minSize) {
+                                                return
+                                            }
                                             printlog "beforeSize:" + beforeSize + "B"
 
                                             // Use the Tinify API client
@@ -214,7 +217,7 @@ class TinyInfo {
     String apiKey
     String maxNum
 
-
+    int minSize
     boolean skip
     boolean isShowLog
 }
