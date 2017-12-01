@@ -28,7 +28,7 @@ tinyPIC is a gradle plugin which can tiny batch pics auto in your res directory.
 
 add below code in the outer build.gradle file(which is in the same directory of settings.gradle)
 
-    classpath 'com.qinuo.gradle:tinyPicPlugin:3.0.0'
+    classpath 'com.qinuo.gradle:TinyPIC_Gradle_Plugin:3.0.0'
     
 add below code in the inner build.gradle file(which is in the same directory of src)
 
