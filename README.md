@@ -61,7 +61,7 @@ TinyPIC is licensed under the MIT license
 
 
 
-###Upload to bintray
+## Upload to bintray
 ***
 1、write into local.properties  
 bintray.user=xxxxxxx  
