@@ -61,11 +61,11 @@ TinyPIC is licensed under the MIT license
 
 
 
-### upload to bintray
+###Upload to bintray
 ***
-1、write into local.properties    
-bintray.user=xxxxxxx     
+1、write into local.properties  
+bintray.user=xxxxxxx  
 bintray.apikey=xxxxxxxxxx  
-2、gradlew install  
+2、gradlew install  
 3、gradlew bintrayUpload
 
