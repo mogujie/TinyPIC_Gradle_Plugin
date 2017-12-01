@@ -4,6 +4,8 @@
 *其他语言版本: [English](README.md).*
 
 ## 更新信息
+### 3.0.0
+    支持大小过滤
 ### 1.1.4
     添加了新配置属性:
     //是否跳过此task
@@ -28,7 +30,7 @@ tinyPIC是一个批量tiny处理res图片的gradle插件，以后您尽管往res
 ***
 在外层的build.gradle文件中（即与settings.gradle同级的文件）添加如下代码
 
- 	    classpath 'com.mogujie.gradle:tinyPicPlugin:1.1.4'
+ 	    classpath 'com.qinuo.gradle:tinyPicPlugin:3.0.0'
  	
 在内层build.gradle文件中（即与src同级的文件）添加如下代码
 
@@ -40,6 +42,8 @@ tinyPIC是一个批量tiny处理res图片的gradle插件，以后您尽管往res
             apiKey = '你申请的tiny API key'
             //是否跳过此task
             skip = true/false 
+            //设置大小
+            minSize = 10*1024
             //是否打印日志
             isShowLog = true/false
         }

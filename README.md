@@ -4,6 +4,8 @@
 *Read this in other languages: [简体中文](README.zh-cn.md).*
 
 ## UpdateInfo
+### 3.0.0
+    support min size
 ### 1.1.4
     add two new properties:
     //if skpi the task
@@ -26,7 +28,7 @@ tinyPIC is a gradle plugin which can tiny batch pics auto in your res directory.
 
 add below code in the outer build.gradle file(which is in the same directory of settings.gradle)
 
-    classpath 'com.mogujie.gradle:tinyPicPlugin:1.1.4'
+    classpath 'com.qinuo.gradle:tinyPicPlugin:3.0.0'
     
 add below code in the inner build.gradle file(which is in the same directory of src)
 
@@ -36,6 +38,8 @@ add below code in the inner build.gradle file(which is in the same directory of 
                 apiKey = 'your tiny API key'
                 //if skpi the task
                 skip = true/false 
+                // set the min size
+                minSize = 10*1024
                 //if print log 
                 isShowLog = true/false
     }
