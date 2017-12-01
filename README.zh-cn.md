@@ -30,7 +30,7 @@ tinyPIC是一个批量tiny处理res图片的gradle插件，以后您尽管往res
 ***
 在外层的build.gradle文件中（即与settings.gradle同级的文件）添加如下代码
 
- 	    classpath 'com.qinuo.gradle:tinyPicPlugin:3.0.0'
+ 	    classpath 'com.qinuo.gradle:TinyPIC_Gradle_Plugin:3.0.0'
  	
 在内层build.gradle文件中（即与src同级的文件）添加如下代码
 
