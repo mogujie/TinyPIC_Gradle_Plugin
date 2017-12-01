@@ -124,12 +124,9 @@ class TinyPicPlugin implements Plugin<Project> {
 
                                         printlog "find target pic >>>>>>>>>>>>>" + fileName
 
-
-
-
                                         def picName = fileName.split('\\.')[0]
                                         def suffix = fileName.split('\\.')[1]
-                                        printlog "picName:" + picName
+//                                        printlog "picName:" + picName
 
                                         def targetFile = new File("${filePathAndName}")
                                         def fis = new FileInputStream(targetFile);
@@ -137,6 +134,7 @@ class TinyPicPlugin implements Plugin<Project> {
                                         try {
                                             def beforeSize = fis.available();
                                             if (beforeSize < tinyinfo.minSize) {
+                                                printlog picName + " is too small," + "it's size is:" + beforeSize + "B"
                                                 return
                                             }
                                             printlog "beforeSize:" + beforeSize + "B"
