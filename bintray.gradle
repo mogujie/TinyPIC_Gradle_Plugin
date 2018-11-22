@@ -1,9 +1,9 @@
 apply plugin: 'com.jfrog.bintray'
 
-def siteUrl = 'https://github.com/mogujie'      // 项目的主页
-def gitUrl = 'https://github.com/mogujie'   // Git仓库的url
-group = "com.mogujie.gradle"  // Maven Group ID for the artifact，一般填你唯一的包名
-version = "1.1.4"
+def siteUrl = 'https://github.com/caizhibiao/TinyPIC_Gradle_Plugin'      // 项目的主页
+def gitUrl = 'https://github.com/caizhibiao/TinyPIC_Gradle_Plugin.git'   // Git仓库的url
+group = "com.qinuo.gradle"  // Maven Group ID for the artifact，一般填你唯一的包名
+version = "3.0.0"
 
 install {
     repositories.mavenInstaller {
@@ -23,9 +23,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'boyue'		//填写的一些基本信息
-                        name 'boyue'
-                        email 'daydayupon360@gmail.com'
+                        id 'caizhibiao'		//填写的一些基本信息
+                        name 'caizhibiao'
+                        email 'cai6400@hotmail.com'
                     }
                 }
                 scm {
@@ -61,8 +61,8 @@ bintray {
     key = properties.getProperty("bintray.apikey")
     configurations = ['archives']
     pkg {
-        repo = "maven"
-        name = "TinyPIC_Gradle_Plugin"	//发布到JCenter上的项目名字
+        repo = "tinyPicPlugin"
+        name = "tinyPicPlugin"	//发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["MIT"]
